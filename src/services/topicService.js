@@ -40,6 +40,7 @@ function editTopic(topicIdx, editedProperties) {
   return Promise.resolve(topic)
 }
 
+// Did not add an ID. This will not work well in case of duplicate names.
 function removeTopic(topicIdx) {
   topics.splice(topicIdx, 1)
   return Promise.resolve()
